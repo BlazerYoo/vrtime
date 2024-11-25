@@ -1,3 +1,13 @@
+/*let aBox = document.querySelector('#boxy');
+let leftHand = document.querySelector('#leftHand');
+let rightHand = document.querySelector('#rightHand');
+//aBox.emit('physicscollided', {collidingEntity: rightHand}, true);
+aBox.addEventListener('physicscollided', function (event) {
+  //console.log('Entity collided with', event.detail.collidingEntity);
+  aBox.setAttribute('color', '#eb4034');
+});*/
+
+
 const rainbowColors = [
   '#FF0000', // Red
   '#FF7F00', // Orange
@@ -29,7 +39,7 @@ function fadeEdges() {
     edge.setAttribute('animation__fadein', {
       property: 'material.opacity',
       from: 0,
-      to: 0.6,
+      to: 0.7,
       dur: 500, // Fade in over 0.5 seconds
       easing: 'easeInOutQuad'
     });
@@ -47,7 +57,7 @@ function fadeEdges() {
     setTimeout(() => {
       edge.setAttribute('animation__fadeout', {
         property: 'material.opacity',
-        from: 0.6,
+        from: 0.7,
         to: 0,
         dur: 500, // Fade out over 0.5 seconds
         easing: 'easeInOutQuad'
@@ -57,4 +67,4 @@ function fadeEdges() {
 }
 
 // Trigger the fade effect every 3 seconds
-setInterval(fadeEdges, 60000);
+setInterval(fadeEdges, 3000);
