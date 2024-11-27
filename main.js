@@ -69,4 +69,4 @@ function fadeEdges() {
 }
 
 // Trigger the fade effect every 3 seconds
-setInterval(fadeEdges, 3000);
+setInterval(fadeEdges, 60000);
