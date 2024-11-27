@@ -64,7 +64,9 @@ function fadeEdges() {
       });
     }, 1000); // Start fade-out after 1 second
   });
+
+  console.log('test');
 }
 
 // Trigger the fade effect every 3 seconds
-setInterval(fadeEdges, 60000);
+setInterval(fadeEdges, 3000);
